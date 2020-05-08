@@ -1,18 +1,28 @@
 header {
   background: black;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.headerH1 {
+  margin: 3px;
+  font-size: 40px;
 }
 
 .navbar-but {
   display: flex;
   justify-content: flex-end;
-  
+  font-size: 20px;
 }
 
 .login-but {
   border: none;
   background: black;
   cursor: pointer;
+  text-align: center;
+  height: 40px;
 }
 
 .signup-but {
@@ -20,4 +30,6 @@ header {
   cursor: pointer;
   background: white;
   color: black;
+  text-align: center;
+  height: 40px;
 }

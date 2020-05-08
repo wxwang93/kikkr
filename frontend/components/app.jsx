@@ -7,7 +7,7 @@ import {Route} from 'react-router-dom';
 const App = () => (
   <div>
     <header>
-      <h1>kikkr</h1>
+      <h1 className="headerH1">kikkr</h1>
       <GreetingContainer/>
     </header>
     <Route path="/login" component={LogInFormContainer} />
