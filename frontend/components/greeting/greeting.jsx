@@ -5,11 +5,22 @@ import { Link } from 'react-router-dom';
 
 const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
-    <nav className="login-signup">
-      <Link to="/login">Login</Link>
-      &nbsp;or&nbsp;
-      <Link to="/signup">Sign up!</Link>
-    </nav>
+    <div className ="navbar-but">
+      <nav className="login-but">
+        <Link to="/login">
+          <button type="button">
+            Log In
+          </button>
+        </Link>
+      </nav>
+      <nav className="signup-but">
+        <Link to="/signup">
+          <button type="button">
+            Sign Up
+          </button>
+        </Link>
+      </nav>
+    </div>
   );
   const personalGreeting = () => (
     <hgroup className="header-group">

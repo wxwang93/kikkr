@@ -1,0 +1,23 @@
+header {
+  background: black;
+  color: white;
+}
+
+.navbar-but {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.login-but {
+  border: none;
+  background: black;
+  cursor: pointer;
+}
+
+.signup-but {
+  border: none;
+  cursor: pointer;
+  background: white;
+  color: black;
+}
