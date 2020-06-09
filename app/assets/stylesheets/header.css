@@ -22,7 +22,9 @@ header {
   background: black;
   cursor: pointer;
   text-align: center;
-  height: 40px;
+  line-height: 40px;
+  padding: 5px 20px;
+  margin: 5px 10px;
 }
 
 .signup-but {
@@ -31,5 +33,7 @@ header {
   background: white;
   color: black;
   text-align: center;
-  height: 40px;
+  line-height: 40px;
+  padding: 5px 20px;
+  margin: 5px 20px;
 }
