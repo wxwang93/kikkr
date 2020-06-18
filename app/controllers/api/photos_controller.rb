@@ -1,0 +1,13 @@
+class Api::PhotosController < ApplicationController
+  def index
+    @photos = Photo.All
+    render :index
+  end
+
+  private
+
+  def photo_params
+    params.require(:photo).permit(:title)
+  end
+
+end
