@@ -1,6 +1,6 @@
 class Api::PhotosController < ApplicationController
   def index
-    @photos = Photo.All
+    @photos = Photo.all
     render :index
   end
 
