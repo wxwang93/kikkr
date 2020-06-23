@@ -4,6 +4,7 @@ import GreetingContainer from "./greeting/greeting_container"
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container'; 
 import {Route} from 'react-router-dom';
+import Form from './form'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -18,7 +19,6 @@ export default class App extends React.Component {
     $.ajax({
       url: "/api/photos"
     }).then(photos => {
-      debugger
       this.setState({photos});
     });
   }
@@ -30,12 +30,13 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        {/* <header>
+        <header>
           <h1 className="headerH1">kikkr</h1>
           <GreetingContainer />
         </header>
         <Route path="/login" component={LogInFormContainer} />
-        <Route path="/signup" component={SignUpFormContainer} /> */}
+        <Route path="/signup" component={SignUpFormContainer} />
+        <Form fetchPhotos={this.fetchPhotos}/>
         <PhotoIndex photos={this.state.photos} />
       </div>
     )
