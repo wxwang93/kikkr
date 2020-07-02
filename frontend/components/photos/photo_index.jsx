@@ -14,3 +14,5 @@ export default function PhotoIndex({ photos }) {
     </ul>
   );
 }
+
+//work on index
