@@ -15,4 +15,4 @@ export default function PhotoIndex({ photos }) {
   );
 }
 
-//work on index
+//work on index;lk;klj
