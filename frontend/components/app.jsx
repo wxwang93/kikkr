@@ -42,7 +42,7 @@ export default class App extends React.Component {
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
         <Form fetchPhotos={this.fetchPhotos}/>
         <ProtectedRoute exact path="/photos/index" component={PhotoIndex} />
-        {/* <PhotoIndex photos={this.state.photos} /> */}
+        { <PhotoIndex photos={this.state.photos} />}
       </div>
     )
   }

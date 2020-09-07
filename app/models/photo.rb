@@ -12,3 +12,5 @@ class Photo < ApplicationRecord
   end
 
 end
+
+# asdf

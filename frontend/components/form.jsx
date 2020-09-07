@@ -51,7 +51,7 @@ export default class Form extends React.Component {
     ) : null;
     return (
       <form onSubmit={this.handleSubmit.bind(this)}>
-        <label htmlFor="post-body">Body of Post</label>
+        <label htmlFor="post-body">Title</label>
         <input
           type="text"
           id="post-body"
@@ -61,7 +61,7 @@ export default class Form extends React.Component {
         <input type="file" onChange={this.handleFile.bind(this)} />
         <h3>Image preview </h3>
         {preview}
-        <button>Make a new Photo!</button>
+        <button>Submit</button>
       </form>
     );
   }
